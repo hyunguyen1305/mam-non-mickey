@@ -2,15 +2,14 @@ import React from "react";
 import Navbar from "./Navbar";
 import banner from "../../images/logoBanner.png";
 
-function NavbarHeader() {
+function NavbarHeader({ refBar, isSticky }) {
   return (
     <header>
-      <img
-        src={banner}
-        alt="banner"
-        style={{ margin: ".8em auto", display: "block" }}
-      ></img>
-      <Navbar></Navbar>
+      <div style={{ backgroundColor: "#b7efcd", padding: "0.8rem 0" }}>
+        <img src={banner} alt="banner" style={{ margin: "0 auto" }}></img>
+      </div>
+
+      <Navbar refBar={refBar} isSticky={isSticky}></Navbar>
     </header>
   );
 }

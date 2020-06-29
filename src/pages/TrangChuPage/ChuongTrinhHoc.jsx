@@ -13,9 +13,6 @@ const ChuongTrinhHocWrapper = styled.div`
     width: 100%;
   }
   .media-image {
-    width: 100%;
-    height: 400px;
-    object-fit: fill;
   }
   .media-title {
     margin: 0;
@@ -47,11 +44,13 @@ function ChuongTrinhHoc() {
           <div className="row no-gutters">
             <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 item">
               <div className="media" style={{ backgroundColor: "#ea907a" }}>
-                <img
-                  src="https://img.freepik.com/free-vector/board-template-with-five-kids-garden_1308-6224.jpg?size=626&ext=jpg"
-                  alt="img"
-                  className="media-image"
-                ></img>
+                <div style={{ width: "100%" }}>
+                  <img
+                    src="https://img.freepik.com/free-vector/board-template-with-five-kids-garden_1308-6224.jpg?size=626&ext=jpg"
+                    alt="img"
+                    className="media-image"
+                  ></img>
+                </div>
                 <h4 className="media-title">Khối Nhà Trẻ</h4>
                 <div className="media-text">
                   Mô hình Học Tập Đa Hoạt Động ở bậc học Mầm non giúp các em có

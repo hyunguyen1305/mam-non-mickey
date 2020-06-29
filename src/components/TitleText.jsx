@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const TitleTextWrapper = styled.h2`
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: ${(props) => props.color};
   text-align: center;
   margin: 2rem;

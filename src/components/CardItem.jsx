@@ -5,15 +5,19 @@ const CardItemWrapper = styled.div`
   div,
   img {
     transition: all 0.5s ease;
+    max-width: "100%";
+    height: "auto";
+    display: block;
+    object-fit: scale-down;
   }
   .card-image {
-    width: 90%;
+    width: 100%;
     height: 200px;
     object-fit: scale-down;
   }
   .card-text {
     font-size: 2rem;
-    padding: 1rem 0;
+    padding: 0 0 1rem 0;
   }
   &:hover {
     .card-image {

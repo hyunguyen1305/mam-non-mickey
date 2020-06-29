@@ -1,7 +1,7 @@
 import React from "react";
 
 function LienHePage() {
-  return <div></div>;
+  return <span></span>;
 }
 
 export default LienHePage;

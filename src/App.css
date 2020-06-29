@@ -15,3 +15,14 @@
 .slick-prev:before {
   color: #cf0a2c;
 }
+.paddingIfSticky {
+  padding-top: 70px;
+}
+.hoverStill:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.hoverStill {
+  pointer-events: auto !important;
+  margin-top: 13px !important;
+}
