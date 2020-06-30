@@ -44,15 +44,7 @@ function Footer() {
       <div className="container">
         <FooterWrapper>
           <TitleText text="Mầm non Mickey" color="white"></TitleText>
-          <div style={{ color: "white", padding: "0 2rem", fontSize: "16px" }}>
-            Trường mầm non Mickey được thành lập "ngày XX/XX/XXX với 10 cán bộ,
-            giáo viên, nhân viên cùng hơn 100 trẻ thuộc 2 nhóm lớp". Trường nằm
-            trong khu dân cư an ninh, trật tự, cách xa tuyến đường lớn, giao
-            thông thuận lợi. Trường chú trọng vào môi trường học thân thiện,
-            năng động, chế độ chăm sóc tốt với những trang thiết bị cao cấp, đầy
-            đủ tiện nghi không những đảm bảo an toàn tuyệt đối cho bé mà còn đảm
-            bảo cho công tác nuôi dưỡng, chăm sóc, giáo dục trẻ toàn diện.
-          </div>
+
           <div className="row no-gutters">
             <div className="col-lg-6 col-xl-6 col-md-6 col-sm-12 col-xs-12 item">
               <div className="coso">
@@ -154,7 +146,7 @@ function Footer() {
             </div>
           </div>
         </FooterWrapper>
-        <div style={{ color: "white", padding: "1em" }}>@2020 - HughNguyen</div>
+        <div style={{ color: "white", padding: "1em" }}>- @2020 -</div>
       </div>
     </section>
   );

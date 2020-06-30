@@ -9,10 +9,22 @@
   position: relative;
   z-index: 100;
 }
+.slick-next,
+.slick-prev {
+  z-index: 1;
+}
+.slick-next {
+  right: 25px;
+}
+.slick-prev {
+  left: 25px;
+}
 .slick-next:before {
+  font-size: x-large;
   color: #cf0a2c;
 }
 .slick-prev:before {
+  font-size: x-large;
   color: #cf0a2c;
 }
 .paddingIfSticky {
@@ -25,4 +37,32 @@
 .hoverStill {
   pointer-events: auto !important;
   margin-top: 13px !important;
+}
+.content {
+  color: red;
+  text-transform: uppercase;
+}
+.content:hover {
+  cursor: pointer;
+}
+.item-content {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.showitem {
+  opacity: 1;
+}
+.hideitem {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
 }

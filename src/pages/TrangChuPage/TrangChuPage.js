@@ -6,6 +6,7 @@ import Carousel from "./Carousel";
 import Sukien from "./Sukien";
 import ChuongTrinhHoc from "./ChuongTrinhHoc";
 import ThuVienAnh from "./ThuVienAnh";
+import CoSo from "./CoSo";
 
 const client = createClient({
   space: "0htr8e4wjyd9",
@@ -20,7 +21,7 @@ function TrangChuPage() {
     const getImage = () => {
       client
         .getAssets({
-          limit: 8,
+          limit: 10,
         })
         .then((response) => {
           console.log(response.items);
@@ -44,7 +45,7 @@ function TrangChuPage() {
   }, []);
   return (
     <section>
-      <div className="container" style={{ paddingTop: "2rem" }}>
+      <div>
         <Carousel></Carousel>
       </div>
       <div
@@ -56,15 +57,22 @@ function TrangChuPage() {
       <div
         className="container-fluid"
         style={{
-          backgroundColor: "#eee",
+          backgroundColor: "whitesmoke",
           padding: "2rem 0",
-          marginTop: "1rem",
+          marginTop: "2rem 0",
         }}
       >
         <ChuongTrinhHoc></ChuongTrinhHoc>
       </div>
       <div
         className="container"
+        style={{ padding: "2rem 0", marginTop: "1rem" }}
+      >
+        <CoSo></CoSo>
+      </div>
+      <hr></hr>
+      <div
+        className="container-fluid"
         style={{ padding: "2rem 0", marginTop: "1rem" }}
       >
         {hinhAnh && <ThuVienAnh data={hinhAnh}></ThuVienAnh>}

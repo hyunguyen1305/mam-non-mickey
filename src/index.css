@@ -28,7 +28,15 @@ a {
 }
 img {
   max-width: 100%;
-  height: auto;
+  max-height: auto;
+  /* margin: auto; */
   display: block;
   object-fit: scale-down;
+}
+img:hover {
+  cursor: pointer;
+}
+ul,
+li {
+  margin: 8px;
 }

@@ -11,25 +11,23 @@ const client = createClient({
 
 const CarouselWrapper = styled.div`
   z-index: 1;
-
   .item {
     width: 100%;
-    height: 60vh;
-    background-color: whitesmoke;
+    height: 70vh;
     position: relative;
     overflow: hidden;
     .image-banner {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: scale-down;
     }
     .text-banner {
       position: absolute;
       bottom: 0;
       left: 0;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.1);
       width: 100%;
       color: white;
       padding: 1rem 0;
@@ -72,7 +70,10 @@ function Carousel() {
     <CarouselWrapper>
       <Slider {...settings}>
         <div className="item">
-          <h3>1</h3>
+          <img
+            src="http://www.nicdarkthemes.com/themes/children/wp/demo/wp-content/uploads/2018/09/parallax-3.jpg"
+            alt="hello"
+          ></img>
         </div>
         {banner &&
           banner.map((item) => {

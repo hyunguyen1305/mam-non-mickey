@@ -65,51 +65,6 @@ function Navbar({ refBar, isSticky }) {
             >
               Giới Thiệu
             </NavLink>
-            <NavLink
-              to="/chuong-trinh-hoc"
-              activeStyle={{
-                color: "white",
-              }}
-              data-tip
-              data-for="chuong-trinh-hoc"
-            >
-              Chương trình học
-              <span>
-                <AiFillCaretDown></AiFillCaretDown>
-              </span>
-            </NavLink>
-            <ReactTooltip
-              id="chuong-trinh-hoc"
-              effect="solid"
-              place="bottom"
-              type="light"
-              className="hoverStill"
-              delayHide={200}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <NavLink
-                  to="/chuong-trinh-hoc/khoi-mam-non"
-                  activeStyle={{
-                    color: "red",
-                  }}
-                >
-                  Khối mầm non
-                </NavLink>
-                <NavLink
-                  to="/chuong-trinh-hoc/khoi-nha-tre"
-                  activeStyle={{
-                    color: "red",
-                  }}
-                >
-                  Khối nhà trẻ
-                </NavLink>
-              </div>
-            </ReactTooltip>
 
             <NavLink
               to="/su-kien"
@@ -120,12 +75,12 @@ function Navbar({ refBar, isSticky }) {
               Sự kiện và hoạt động
             </NavLink>
             <NavLink
-              to="/csvc"
+              to="/thu-vien-anh"
               activeStyle={{
                 color: "white",
               }}
             >
-              Cơ sở vật chất
+              Thư viện ảnh
             </NavLink>
             <NavLink
               to="lien-he"

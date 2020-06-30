@@ -18,7 +18,7 @@ function Sukien({ data }) {
       <TitleText text="các Sự kiện và Hoạt động"></TitleText>
       <div className="container-fluid">
         <SuKienWrapper>
-          <div className="row no-gutters">
+          <div className="row">
             {data &&
               data.map((item, i) => {
                 return (

@@ -12,7 +12,7 @@ function ThuVienAnh({ data }) {
   return (
     <div>
       <TitleText text="Thư Viện ảnh"></TitleText>
-      <div className="container" style={{ marginBottom: "2em" }}>
+      <div className="container-fluid" style={{ marginBottom: "2em" }}>
         <ImageMasonry
           numCols={4}
           animate={true}
