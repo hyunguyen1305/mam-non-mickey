@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import ReactTooltip from "react-tooltip";
+// import ReactTooltip from "react-tooltip";
 import { NavLink } from "react-router-dom";
 
-import { AiFillCaretDown } from "react-icons/ai";
+// import { AiFillCaretDown } from "react-icons/ai";
 
 const NavigationWrapper = styled.div`
   display: flex;

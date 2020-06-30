@@ -1,7 +1,7 @@
 import React from "react";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { MdLocationOn, MdSmartphone } from "react-icons/md";
-import { FiPhone } from "react-icons/fi";
+// import { AiOutlineClockCircle } from "react-icons/ai";
+import { MdLocationOn } from "react-icons/md";
+// import { FiPhone } from "react-icons/fi";
 import TitleText from "../../components/TitleText";
 import styled from "styled-components";
 
