@@ -8,7 +8,7 @@ import CardItem from "../../components/CardItem";
 const SuKienWrapper = styled.div`
   .item {
     transition: all 0.5s ease-in-out;
-    margin: 4px 0;
+    margin: 1rem 0 2rem 0;
   }
 `;
 
