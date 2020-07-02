@@ -41,6 +41,12 @@ li {
 strong {
   color: orangered;
 }
+.item-car {
+  height: 65vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 @media (max-width: 767px) {
   ul {
     padding-left: 8px;

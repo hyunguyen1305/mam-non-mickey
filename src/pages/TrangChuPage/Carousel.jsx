@@ -12,27 +12,21 @@ const client = createClient({
 
 const CarouselWrapper = styled.div`
   z-index: 1;
-  .item-car {
+  .image-banner {
     width: 100%;
-    height: 65vh;
-    position: relative;
-    overflow: hidden;
-    .image-banner {
-      width: 100%;
-      height: 100%;
-      object-fit: scale-down;
-      display: block;
-    }
-    .text-banner {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.1);
-      width: 100%;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
+    height: 100%;
+    object-fit: scale-down;
+    display: block;
+  }
+  .text-banner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
   }
 `;
 
@@ -68,32 +62,38 @@ function Carousel() {
   };
   return (
     <CarouselWrapper>
-      <Slider {...settings}>
-        <div className="item">
-          <img
-            src="https://dssintlsas.akamaized.net/artwork/Disney_Mickey_Mouse_Clubhouse_JPN_L178_HD_1920x1080-5c422ff91e8846c31c2d280f.png"
-            alt="hello"
-            className="image-banner"
-          ></img>
-        </div>
-        {banner &&
-          banner.map((item) => {
-            return (
-              <div className="item" key={item.fields.hinhanh.fields.file.url}>
-                <img
-                  src={item.fields.hinhanh.fields.file.url}
-                  alt="banner"
-                  className="image-banner"
-                ></img>
-                <Link to={`/su-kien/${item.fields.lienket.sys.id}`}>
-                  <div className="text-banner">
-                    <h2>{item.fields.lienket.fields.tieude}</h2>
-                  </div>
-                </Link>
-              </div>
-            );
-          })}
-      </Slider>
+      <div>
+        <Slider {...settings}>
+          <div className="item-car">
+            <img
+              src="https://dssintlsas.akamaized.net/artwork/Disney_Mickey_Mouse_Clubhouse_JPN_L178_HD_1920x1080-5c422ff91e8846c31c2d280f.png"
+              alt="hello"
+              className="image-banner"
+            ></img>
+          </div>
+
+          {banner &&
+            banner.map((item) => {
+              return (
+                <div
+                  className="item-car"
+                  key={item.fields.hinhanh.fields.file.url}
+                >
+                  <img
+                    src={item.fields.hinhanh.fields.file.url}
+                    alt="banner"
+                    className="image-banner"
+                  ></img>
+                  <Link to={`/su-kien/${item.fields.lienket.sys.id}`}>
+                    <div className="text-banner">
+                      <h2>{item.fields.lienket.fields.tieude}</h2>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
+        </Slider>
+      </div>
     </CarouselWrapper>
   );
 }
