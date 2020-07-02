@@ -12,7 +12,7 @@ const client = createClient({
 
 const CarouselWrapper = styled.div`
   z-index: 1;
-  .item {
+  .item-car {
     width: 100%;
     height: 65vh;
     position: relative;
