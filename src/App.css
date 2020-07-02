@@ -57,13 +57,3 @@
   left: -9999px;
   opacity: 0;
 }
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.no-gutters > [class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
