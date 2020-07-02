@@ -1,7 +1,9 @@
 import React from "react";
 // import { AiOutlineClockCircle } from "react-icons/ai";
-import { MdLocationOn } from "react-icons/md";
-// import { FiPhone } from "react-icons/fi";
+import { MdLocationOn, MdCropLandscape, MdRoomService } from "react-icons/md";
+import { BsHouseDoor, BsFillCameraVideoFill } from "react-icons/bs";
+import { FaPlusCircle } from "react-icons/fa";
+
 import TitleText from "../../components/TitleText";
 import styled from "styled-components";
 
@@ -33,8 +35,8 @@ function CoSo() {
                 ></MdLocationOn>
               </div>
               <div style={{ fontSize: "1.5rem" }}>
-                Khu Vực: Gồm 2 cơ sở thuộc khu dân cư đường Chu Văn An, Quận
-                Bình Thạnh, Tp Hồ Chí Minh
+                <strong>Khu Vực</strong>: Gồm 2 cơ sở thuộc khu dân cư đường Chu
+                Văn An, Quận Bình Thạnh, Tp Hồ Chí Minh
               </div>
             </div>
             {/*  */}
@@ -42,33 +44,33 @@ function CoSo() {
               style={{ display: "flex", alignItems: "center", margin: "1rem" }}
             >
               <div>
-                <MdLocationOn
+                <MdCropLandscape
                   style={{
                     border: "1px black solid",
                     borderRadius: "50%",
                     padding: "8px",
                   }}
                   size={40}
-                ></MdLocationOn>
+                ></MdCropLandscape>
               </div>
               <div style={{ fontSize: "1.5rem" }}>
-                Diện tích : {">"} 100m<sup>2</sup>
+                <strong>Diện Tích</strong>: {">"} 100m<sup>2</sup>
               </div>
             </div>
             {/*  */}
             <div style={{ display: "flex", alignItems: "top", margin: "1rem" }}>
               <div>
-                <MdLocationOn
+                <BsHouseDoor
                   style={{
                     border: "1px black solid",
                     borderRadius: "50%",
                     padding: "8px",
                   }}
                   size={40}
-                ></MdLocationOn>
+                ></BsHouseDoor>
               </div>
               <div style={{ fontSize: "1.5rem", paddingTop: "8px" }}>
-                Hệ thống phòng học:
+                <strong>Hệ thống phòng học</strong>:
                 <ul>
                   <li>
                     Mỗi phòng học rộng trung bình 50m
@@ -92,17 +94,17 @@ function CoSo() {
             {/*  */}
             <div style={{ display: "flex", alignItems: "top", margin: "1rem" }}>
               <div>
-                <MdLocationOn
+                <MdRoomService
                   style={{
                     border: "1px black solid",
                     borderRadius: "50%",
                     padding: "8px",
                   }}
                   size={40}
-                ></MdLocationOn>
+                ></MdRoomService>
               </div>
               <div style={{ fontSize: "1.5rem", paddingTop: "8px" }}>
-                Khu vực nhà bếp:
+                <strong>Khu vực nhà bếp</strong>:
                 <ul>
                   <li>
                     Đầy đủ các trang thiết bị, đồ dùng inox và đảm bảo vệ sinh
@@ -116,44 +118,40 @@ function CoSo() {
               </div>
             </div>
             {/*  */}
-            <div
-              style={{ display: "flex", alignItems: "center", margin: "1rem" }}
-            >
+            <div style={{ display: "flex", alignItems: "top", margin: "1rem" }}>
               <div>
-                <MdLocationOn
+                <FaPlusCircle
                   style={{
                     border: "1px black solid",
                     borderRadius: "50%",
                     padding: "8px",
                   }}
                   size={40}
-                ></MdLocationOn>
+                ></FaPlusCircle>
               </div>
               <div style={{ fontSize: "1.5rem" }}>
-                Phòng y tế: trang bị đầy đủ đồ dùng, thiết bị y tế, có nhân viên
-                y tế túc trực để chăm sóc sức khỏe và kịp thời xử lý các tình
-                huống sơ cấp cứu.
+                <strong>Phòng y tế</strong>: trang bị đầy đủ đồ dùng, thiết bị y
+                tế, có nhân viên y tế túc trực để chăm sóc sức khỏe và kịp thời
+                xử lý các tình huống sơ cấp cứu.
               </div>
             </div>
             {/*  */}
 
-            <div
-              style={{ display: "flex", alignItems: "center", margin: "1rem" }}
-            >
+            <div style={{ display: "flex", alignItems: "top", margin: "1rem" }}>
               <div>
-                <MdLocationOn
+                <BsFillCameraVideoFill
                   style={{
                     border: "1px black solid",
                     borderRadius: "50%",
                     padding: "8px",
                   }}
                   size={40}
-                ></MdLocationOn>
+                ></BsFillCameraVideoFill>
               </div>
               <div style={{ fontSize: "1.5rem" }}>
-                Hệ thống camera online: Được trang bị trong từng phòng học và
-                khu vực chức năng giúp quý phụ huynh có thể quan sát mọi hoạt
-                động của bé.
+                <strong>Hệ thống camera online</strong>: Được trang bị trong
+                từng phòng học và khu vực chức năng giúp quý phụ huynh có thể
+                quan sát mọi hoạt động của bé.
               </div>
             </div>
             {/*  */}

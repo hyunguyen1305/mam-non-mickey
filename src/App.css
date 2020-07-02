@@ -39,8 +39,8 @@
   margin-top: 13px !important;
 }
 .content {
-  color: red;
-  text-transform: uppercase;
+  color: orangered;
+  text-transform: capitalize;
 }
 .content:hover {
   cursor: pointer;
@@ -57,6 +57,7 @@
   left: -9999px;
   opacity: 0;
 }
+
 .no-gutters {
   margin-right: 0;
   margin-left: 0;

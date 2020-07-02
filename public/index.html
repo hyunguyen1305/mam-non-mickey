@@ -41,47 +41,51 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v7.0",
-        });
-      };
+    <div style="display: flex; flex-direction: column;">
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            xfbml: true,
+            version: "v7.0",
+          });
+        };
 
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s);
+          js.id = id;
+          js.src =
+            "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
 
-    <!-- Your Chat Plugin code -->
-    <div
-      class="fb-customerchat"
-      attribution="setup_tool"
-      page_id="112921177133784"
-      theme_color="#0084ff"
-      size="standard"
-      logged_in_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
-      logged_out_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
-    ></div>
+      <!-- Your Chat Plugin code -->
+      <div
+        class="fb-customerchat"
+        attribution="setup_tool"
+        page_id="112921177133784"
+        theme_color="#0084ff"
+        size="standard"
+        logged_in_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
+        logged_out_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
+      ></div>
 
-    <div
-      class="zalo-chat-widget"
-      data-oaid="579745863508352884"
-      data-welcome-message="Rất vui khi được hỗ trợ bạn!"
-      data-autopopup="0"
-      data-width="350"
-      data-height="420"
-    ></div>
+      <div
+        class="zalo-chat-widget"
+        data-oaid="579745863508352884"
+        data-welcome-message="Rất vui khi được hỗ trợ bạn!"
+        data-autopopup="1"
+        data-width="350"
+        data-height="420"
+      ></div>
 
-    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+      <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+    </div>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

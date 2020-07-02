@@ -5,7 +5,7 @@ import banner from "../../images/logoBanner.png";
 function NavbarHeader({ refBar, isSticky }) {
   return (
     <header>
-      <div style={{ backgroundColor: "#b7efcd", padding: "0.8rem 0" }}>
+      <div style={{ padding: "0.8rem 0" }}>
         <img src={banner} alt="banner" style={{ margin: "0 auto" }}></img>
       </div>
 

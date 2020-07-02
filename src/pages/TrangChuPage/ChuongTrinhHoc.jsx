@@ -532,28 +532,16 @@ const LuaChonWrapper = styled.div`
 `;
 
 function ChuongTrinhHoc() {
-  const [isSelect, setSelect] = useState("mn");
+  const [isSelect, setSelect] = useState("nt");
   return (
     <div style={{ margin: "2rem 0" }}>
-      <TitleText text="Chương trình học"></TitleText>
       <div className="container">
+        <TitleText text="Chương trình học"></TitleText>
         <LuaChonWrapper isSelect={isSelect}>
           <div
             style={
-              isSelect === "mn"
-                ? { backgroundColor: "orange", color: "white" }
-                : null
-            }
-            onClick={() => {
-              setSelect("mn");
-            }}
-          >
-            Khối Mầm Non
-          </div>
-          <div
-            style={
               isSelect === "nt"
-                ? { backgroundColor: "orange", color: "white" }
+                ? { backgroundColor: "#FFB321", color: "white" }
                 : null
             }
             onClick={() => {
@@ -561,6 +549,18 @@ function ChuongTrinhHoc() {
             }}
           >
             khối Nhà Trẻ
+          </div>
+          <div
+            style={
+              isSelect === "mn"
+                ? { backgroundColor: "#FFB321", color: "white" }
+                : null
+            }
+            onClick={() => {
+              setSelect("mn");
+            }}
+          >
+            Khối Mầm Non
           </div>
         </LuaChonWrapper>
         {isSelect === "mn" ? (

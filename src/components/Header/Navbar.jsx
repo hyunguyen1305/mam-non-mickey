@@ -13,12 +13,13 @@ const NavigationWrapper = styled.div`
   a {
     position: relative;
     color: black;
-    font-weight: 500;
+    font-weight: bold;
     text-decoration: none;
     transition: 0.3s;
     padding: 0.8em;
     margin: 0.5em;
     display: inline-block;
+
     :hover {
       color: white;
     }
@@ -39,7 +40,7 @@ function Navbar({ refBar, isSticky }) {
       <div
         style={{
           textAlign: "center",
-          backgroundColor: "#cf0a2c",
+          backgroundColor: "#DA0F10",
           boxShadow: "0 2px 2px 0 rgba(0,0,0,.5)",
           overflowX: "scroll",
         }}

@@ -7,9 +7,10 @@ const TitleTextWrapper = styled.h2`
   text-align: center;
   margin: 2rem;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   vertical-align: baseline;
-  font-weight: 500;
+  font-weight: 600;
 `;
 
 function TitleText({ text, color }) {

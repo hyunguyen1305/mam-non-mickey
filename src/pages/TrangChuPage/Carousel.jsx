@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 import { createClient } from "contentful";
 import { Link } from "react-router-dom";
+
 const client = createClient({
   space: "0htr8e4wjyd9",
   accessToken: `vBO4C9cLXX5v6JbvNaplqfeVH9j-_HDp7WJeMnhEIOQ`,
@@ -13,15 +14,14 @@ const CarouselWrapper = styled.div`
   z-index: 1;
   .item {
     width: 100%;
-    height: 70vh;
+    height: 65vh;
     position: relative;
     overflow: hidden;
     .image-banner {
-      margin: 0 auto;
-      max-width: 100%;
-      height: auto;
-      display: block;
+      width: 100%;
+      height: 100%;
       object-fit: scale-down;
+      display: block;
     }
     .text-banner {
       position: absolute;
@@ -71,8 +71,9 @@ function Carousel() {
       <Slider {...settings}>
         <div className="item">
           <img
-            src="http://www.nicdarkthemes.com/themes/children/wp/demo/wp-content/uploads/2018/09/parallax-3.jpg"
+            src="https://dssintlsas.akamaized.net/artwork/Disney_Mickey_Mouse_Clubhouse_JPN_L178_HD_1920x1080-5c422ff91e8846c31c2d280f.png"
             alt="hello"
+            className="image-banner"
           ></img>
         </div>
         {banner &&

@@ -45,7 +45,7 @@ function TrangChuPage() {
   }, []);
   return (
     <section>
-      <div>
+      <div className="container">
         <Carousel></Carousel>
       </div>
       <div
@@ -53,6 +53,26 @@ function TrangChuPage() {
         style={{ padding: "2rem 0", marginTop: "1rem" }}
       >
         {suKien && <Sukien data={suKien}></Sukien>}
+        <div
+          style={{
+            textAlign: "center",
+            margin: "2rem",
+          }}
+        >
+          <Link
+            to="/su-kien"
+            style={{
+              textDecoration: "none",
+              border: "1px gray solid",
+              width: "auto",
+              padding: "1rem",
+              borderRadius: "8px",
+              color: "gray",
+            }}
+          >
+            Xem tất cả sự kiện
+          </Link>
+        </div>
       </div>
       <div
         className="container-fluid"
@@ -66,19 +86,36 @@ function TrangChuPage() {
       </div>
       <div
         className="container"
-        style={{ padding: "2rem 0", marginTop: "1rem" }}
+        style={{
+          padding: "2rem 0",
+          marginTop: "1rem",
+        }}
       >
         <CoSo></CoSo>
       </div>
       <hr></hr>
       <div
         className="container-fluid"
-        style={{ padding: "2rem 0", marginTop: "1rem" }}
+        style={{ padding: "2rem 0", margin: "2rem 0" }}
       >
         {hinhAnh && <ThuVienAnh data={hinhAnh}></ThuVienAnh>}
-        <div style={{ textAlign: "center" }}>
-          <Link to="/thu-vien-anh" style={{ textDecoration: "none" }}>
-            Xem thêm
+        <div
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <Link
+            to="/thu-vien-anh"
+            style={{
+              textDecoration: "none",
+              border: "1px gray solid",
+              width: "auto",
+              padding: "1rem",
+              borderRadius: "8px",
+              color: "gray",
+            }}
+          >
+            Xem tất cả ảnh
           </Link>
         </div>
       </div>

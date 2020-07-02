@@ -2,7 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const CardItemWrapper = styled.div`
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.5);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: 1rem;
   div,
   img {
     transition: all 0.3s ease;
@@ -39,8 +41,10 @@ function CardItem({ imgLink, text, date }) {
       <div>
         <img src={imgLink} alt="img" className="card-image"></img>
       </div>
-      <small>Ngày: {date}</small>
-      <div className="card-text">{text}</div>
+      <div style={{ textAlign: "center" }}>
+        <small>Ngày: {date}</small>
+        <div className="card-text">{text}</div>
+      </div>
     </CardItemWrapper>
   );
 }
