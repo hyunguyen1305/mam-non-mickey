@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/mickey-icon.png" />
+    <link rel="icon" href="%PUBLIC_URL%/logo_mamnonmickey.png" />
 
     <meta name="theme-color" content="#000000" />
     <meta
@@ -13,7 +13,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/mickey-icon.png" />
+    <meta
+      name="google-site-verification"
+      content="1vIIq35P8KlytllhFRqmZOJVoFHcfkNrkGcaRE8lF7g"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo_mamnonmickey.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -45,72 +49,10 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     />
-    <title>Trường Mầm Non Mickey</title>
+    <title>Trường Mầm Non Mickey - Quận Bình Thạnh</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- Load Facebook SDK for JavaScript -->
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          xfbml: true,
-          version: "v7.0",
-        });
-      };
-
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-
-    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
-    <style>
-      .zalo-chat-widget {
-        left: 0 !important;
-      }
-    </style>
-    <div>
-      <div id="fb-root"></div>
-
-      <!-- Your Chat Plugin code -->
-      <div
-        class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="112921177133784"
-        theme_color="#0084ff"
-        size="standard"
-        logged_in_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
-        logged_out_greeting="Xin chào, chào mừng bạn đến Mầm Non Mickey"
-        greeting_dialog_display="fade"
-      ></div>
-
-      <div
-        class="zalo-chat-widget"
-        data-oaid="579745863508352884"
-        data-welcome-message="Rất vui khi được hỗ trợ bạn!"
-        data-autopopup="1"
-        data-width="350"
-        data-height="420"
-      ></div>
-    </div>
-
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

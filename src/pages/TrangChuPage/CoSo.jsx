@@ -3,6 +3,7 @@ import React from "react";
 import { MdLocationOn, MdCropLandscape, MdRoomService } from "react-icons/md";
 import { BsHouseDoor, BsFillCameraVideoFill } from "react-icons/bs";
 import { FaPlusCircle } from "react-icons/fa";
+import { RiServiceLine } from "react-icons/ri";
 
 import TitleText from "../../components/TitleText";
 import styled from "styled-components";
@@ -136,7 +137,6 @@ function CoSo() {
               </div>
             </div>
             {/*  */}
-
             <div style={{ display: "flex", alignItems: "top", margin: "1rem" }}>
               <div>
                 <BsFillCameraVideoFill
@@ -152,6 +152,26 @@ function CoSo() {
                 <strong>Hệ thống camera online</strong>: Được trang bị trong
                 từng phòng học và khu vực chức năng giúp quý phụ huynh có thể
                 quan sát mọi hoạt động của bé.
+              </div>
+            </div>
+            {/*  */}
+            <div style={{ display: "flex", margin: "1rem" }}>
+              <div>
+                <RiServiceLine
+                  style={{
+                    border: "1px black solid",
+                    borderRadius: "50%",
+                    padding: "8px",
+                  }}
+                  size={40}
+                ></RiServiceLine>
+              </div>
+              <div style={{ fontSize: "1.5rem", paddingTop: "8px" }}>
+                <strong>Dịch vụ</strong>:
+                <ul>
+                  <li>Trông thứ 7</li>
+                  <li>Đón muộn.</li>
+                </ul>
               </div>
             </div>
             {/*  */}

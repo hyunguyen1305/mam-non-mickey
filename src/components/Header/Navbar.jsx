@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-// import ReactTooltip from "react-tooltip";
-import { NavLink } from "react-router-dom";
 
-// import { AiFillCaretDown } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const NavigationWrapper = styled.div`
   display: flex;
@@ -34,7 +32,7 @@ const NavigationWrapper = styled.div`
   }
 `;
 
-function Navbar({ refBar, isSticky }) {
+function Navbar() {
   return (
     <div style={{ position: "relative", zIndex: "100" }}>
       <div
@@ -44,8 +42,6 @@ function Navbar({ refBar, isSticky }) {
           boxShadow: "0 2px 2px 0 rgba(0,0,0,.5)",
           overflowX: "scroll",
         }}
-        ref={refBar}
-        className={isSticky ? " sticky" : " normal"}
       >
         <div className="container">
           <NavigationWrapper>

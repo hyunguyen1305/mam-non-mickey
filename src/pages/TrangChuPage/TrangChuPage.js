@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react";
 import { createClient } from "contentful";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
 import Carousel from "./Carousel";
-import Sukien from "./Sukien";
 import ChuongTrinhHoc from "./ChuongTrinhHoc";
-import ThuVienAnh from "./ThuVienAnh";
 import CoSo from "./CoSo";
+import Sukien from "./Sukien";
+import ThuVienAnh from "./ThuVienAnh";
 
 const client = createClient({
   space: "0htr8e4wjyd9",
@@ -16,7 +15,7 @@ const client = createClient({
 function TrangChuPage() {
   const [hinhAnh, setHinhAnh] = useState(null);
   const [suKien, setSukien] = useState(null);
-  // const [banner, setBanner] = useState(null);
+
   useEffect(() => {
     const getImage = () => {
       client
@@ -45,7 +44,7 @@ function TrangChuPage() {
   }, []);
   return (
     <section>
-      <div className="container">
+      <div className="container-fluid">
         <Carousel></Carousel>
       </div>
       <div
